@@ -19,15 +19,15 @@ public class Desafio {
         emails.add("Rafael");
 
         try {
-            Map<String, Integer> resultado = Desafio.calcula(itens, emails);
+            Map<String, Integer> resultado = calculaValorPorEmail(itens, emails);
             System.out.println(resultado);
         } catch (ArithmeticException e) {
-            System.out.println("Encerrando o programa devido a erro aritmetico");
+            System.out.println("Encerrando o programa devido a erro aritmético");
             System.exit(1);
         }
     }
 
-    private static Map<String, Integer> calcula(List<Item> itens, List<String> emails) {
+    private static Map<String, Integer> calculaValorPorEmail(List<Item> itens, List<String> emails) {
         Map<String, Integer> resultado = new HashMap<>();
 
         int quantidadeDeEmails = emails.size();
@@ -35,9 +35,9 @@ public class Desafio {
         int valorPorPessoa = valorIndividual(quantidadeDeEmails, valorTotalDaLista);
         int diferencaEmCentavos = valorTotalDaLista - (valorPorPessoa * quantidadeDeEmails);
 
-            for (int i = 0; i < quantidadeDeEmails; i++) {
-                resultado.put(emails.get(i), valorPorPessoa);
-            }
+        for (int i = 0; i < quantidadeDeEmails; i++) {
+            resultado.put(emails.get(i), valorPorPessoa);
+        }
 
         int contadorDeEmails = 0;
         while (diferencaEmCentavos > 0) {
@@ -56,7 +56,7 @@ public class Desafio {
         try {
             valorIndividual = valorTotolDaComrpra / quantidadeDeEmails;
         } catch (ArithmeticException e) {
-            System.out.println("Erro ao tentar dividir " + e.getMessage());
+            System.out.println("Erro ao tentar dividir: " + e.getMessage());
             throw e;
         }
         return valorIndividual;
@@ -72,4 +72,3 @@ public class Desafio {
         return total;
     }
 }
-
