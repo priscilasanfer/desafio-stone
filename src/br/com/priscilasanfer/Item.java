@@ -1,4 +1,4 @@
-package br.com.priscila.model;
+package br.com.priscilasanfer;
 
 public class Item {
     private String nome;

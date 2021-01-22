@@ -1,6 +1,4 @@
-package br.com.priscila;
-
-import br.com.priscila.model.Item;
+package br.com.priscilasanfer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,14 +9,6 @@ public class Desafio {
     public static void main(String[] args) {
         List<Item> itens = new ArrayList<>();
         List<String> emails = new ArrayList<>();
-
-        itens.add(new Item("caneta", 1, 100));
-        itens.add(new Item("apontador", 3, 4033));
-
-        emails.add("Priscila");
-        emails.add("Malu");
-        emails.add("Meg");
-        emails.add("Rafael");
 
         try {
             Map<String, Integer> resultado = calculaValorPorEmail(itens, emails);
