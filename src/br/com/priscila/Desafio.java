@@ -1,5 +1,7 @@
 package br.com.priscila;
 
+import br.com.priscila.model.Item;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
