@@ -58,7 +58,7 @@ Por exemplo:
 5. Para executar o programa existem duas maneiras:  
    5.1. **Pela IDE:** basta executar o método `main`.  
    5.2. **Pelo terminal:** basta acessar a pasta `scr` do projeto e rodar o comando para 
-   compilar a classe: `javac ./br/com/priscila/Desafio.java`  e depois o comando para executá-la: `java Desafio`
+   compilar a classe: `javac ./br/com/priscilasanfer/Desafio.java`  e depois o comando para executá-la: `java br.com.priscilasanfer.Desafio `
 6. Verifique os valores devidos de cada integrante.
 
    
